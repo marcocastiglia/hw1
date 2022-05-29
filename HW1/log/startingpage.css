@@ -1,0 +1,89 @@
+:root {
+    --background: #00807d;
+    --nav_background: #39ba62;
+    --logo-color: #f0f0f0;
+    --text-color: #151515;
+    --font: 'Segoe UI', sans-serif;
+}
+
+html {
+    font-size: 25px;
+}
+
+body {
+    margin: 0px;
+}
+
+nav {
+    height: 15vh;
+    background-color: var(--nav_background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    font-family: 'Palette Mosaic', cursive, sans-serif;
+    font-size: 1.2rem;
+    color: var(--logo-color);
+    border: 3px solid var(--logo-color);
+    border-radius: 15px;
+    text-align: center;
+    padding: 10px 15px;  
+}
+
+header {
+    background-color: var(--background);
+    height: 85vh;
+
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--logo-color);
+    border: 1px ridge #cccccc;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#center #buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   
+
+    width: 50%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#center #buttons a {
+    display: block;
+    text-align: center;
+
+    color: var(--background);
+    border: 1px ridge var(--background);
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    padding: 10px 15px;
+}
+
+#center #buttons a:hover {
+    color: var(--logo-color);
+    background-color: var(--background);
+}
+
+#center h1, #center em {
+    font-family: var(--font);
+    color: var(--text-color);
+}
+
